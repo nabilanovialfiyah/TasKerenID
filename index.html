@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TasKeren.ID</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigasi -->
+  <nav>
+    <h1>TasKeren.ID</h1>
+    <div class="nav-links">
+      <a href="#beranda">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#about">Tentang</a>
+    </div>
+  </nav>
+<!-- Hero -->
+<section class="hero" id="beranda">
+  <h2>Temukan Tas Impianmu di TasKeren.ID ✨</h2>
+  
+ 
+  <!-- Store Bio di bawah judul dan rata kiri -->
+  <div class="store-bio">
+    <h2>Toko TasKeren.ID</h2>
+    <p>📍 Alamat: Jl. Puskesmas No.123, Deli Serdang-Sumatera Utara</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/6283137572155 target="_blank">0831-3757-2155</a></p>
+    <p>📧 Email: <a href="mailto:taskerenid@gmail.com">taskerenid@gmail.com</a></p>
+    <p>⏰ Buka: Setiap Hari 08.00 - 21.00 WIB</p>
+  </div>
+</section>
+
+
+
+  <!-- Produk -->
+  <section class="products" id="produk">
+    <h2 style="text-align:center; color:#9d1f2b; margin-bottom: 1rem;">Produk Pilihan</h2>
+    <input type="text" id="searchBox" placeholder="Cari tas..." style="display:block; margin: 0 auto 1rem auto; padding: 0.5rem; width: 60%; max-width: 400px; border: 1px solid #ccc; border-radius: 8px;" />
+    <div class="product-grid" id="productContainer">
+      <!-- Produk akan dimuat oleh JavaScript -->
+    </div>
+  </section>
+
+  <!-- Keranjang -->
+  <section class="cart" style="padding:2rem; background:#fff0f5;">
+    <h2 style="text-align:center; color:#9d1f2b;">Keranjang Belanja</h2>
+    <ul id="cartItems" style="list-style:none; padding:0; max-width:600px; margin:1rem auto;"></ul>
+    <p style="text-align:center; font-size:1.2rem;">Total: Rp <span id="totalPrice">0</span></p>
+    <div style="text-align:center;">
+      <button onclick="cart = []; updateCart();" style="background:#d14567; color:white; border:none; padding:10px 20px; border-radius:8px;">Kosongkan Keranjang</button>
+    </div>
+  </section>
+  <section class="new-arrivals-slider">
+  <h2>New Arrival</h2>
+  <div class="slider" id="arrivalSlider">
+    <div class="slide"><img src="images/tas5.jpg" alt="Tas Baru 1"></div>
+    <div class="slide"><img src="images/tas6.jpg" alt="Tas Baru 2"></div>
+    <!-- dst... -->
+  </div>
+</section>
+
+  <!-- Tentang Kami -->
+  <section class="about" id="about">
+    <h3>Tentang TasKeren.ID</h3>
+    <p>Kami adalah platform jual beli tas fashion kekinian yang mengutamakan kualitas, keunikan, dan pelayanan terbaik bagi pelanggan. Di TasKeren.ID, kamu bisa menemukan tas keren untuk berbagai gaya dan kebutuhanmu.</p>
+  </section>
+<!-- Modal Gambar -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+<!-- Payment Methods -->
+<section class="payment-methods">
+  <h2>Metode Pembayaran</h2>
+  <div class="payment-logos">
+    <div class="payment-logo">
+      <img src="images/bni.jpg" alt="BNI">
+      <span>BNI</span>
+    </div>
+    <div class="payment-logo">
+      <img src="images/bri.jpg" alt="BRI">
+      <span>BRI</span>
+    </div>
+    <div class="payment-logo">
+      <img src="images/bca.jpg" alt="BCA">
+      <span>BCA</span>
+    </div>
+    <div class="payment-logo">
+      <img src="images/bsi.jpg" alt="BSI">
+      <span>BSI</span>
+    </div>
+    <div class="payment-logo">
+      <img src="images/mandiri.jpg" alt="Mandiri">
+      <span>Mandiri</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 TasKeren.ID — Dibuat dengan ❤ oleh Nabila
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
